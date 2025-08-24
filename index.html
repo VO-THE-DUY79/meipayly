@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meipayly</title>
+
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS FONTAWESOME -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- SPLIDE -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+        />
+
+        <!-- link:css -->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <!-- <div style="position: relative">
+        </div> -->
+        <header>
+            <!-- Quy tắc đặt tên class cho 1 thẻ html -->
+            <!-- BEM: Block Element Modifier -->
+
+            <h1 class="header-brand">
+                <!-- icon -->
+                <i class="header-brand__icon fa-brands fa-atlassian"></i>
+                <p class="header-brand__name">
+                    meipaly
+                    <!-- <span class="brand-name__desc"
+                         >descs
+                         <span class="header-brand__name__descs__abc"></span>
+                     </span> -->
+                </p>
+                <!-- <p class="header-brand__name-1"></p> -->
+            </h1>
+
+            <nav class="header-nav">
+                <ul>
+                    <li class="header-nav__item">
+                        <a class="active header-nav__item__link" href="#"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__item__link" href="#">Services</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__item__link" href="#">Showcase</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__item__link" href="#">Blog</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__item__link" href="#">About us</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__item__link" href="#">Contact</a>
+                    </li>
+                    <!-- đánh dấu scroll top -->
+                    <li class="header_nav_item" style="display: none">
+                        <a class="header_nav_item_top" href="#top">top</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Flex box -->
+        <!-- Điều kiện cần: cấu trúc html -->
+
+        <!-- flex container -->
+        <!-- flex container: css display: flex -->
+        <!-- trục chính: chiều ngang => flex item nằm 1 hàng theo chiều ngang -->
+        <!-- flex-direction: thay đổi chiều trục chính -->
+        <!-- flex-direction: row (mặc định) => trục chính nằm ngang -->
+        <!-- flex-direction: column => trục chính nằm dọc -->
+
+        <!-- <div style="display: flex"> -->
+        <!-- flex item -->
+        <!-- <div style="background: red">div 1</div> -->
+
+        <!-- flex item -->
+        <!-- <div style="background: yellow">div 2</div> -->
+        <!-- </div> -->
+
+        <!-- CAROUSEL -->
+        <section class="carousel">
+            <div class="carousel__content">
+                <p class="carousel__content__title">
+                    WELCOME TO MEIPALY AGENCY
+                </p>
+                <p class="carousel__content__subtitle">
+                    SMART WEB <br />
+                    DESIGN AGENCY
+                </p>
+                <button class="carousel__content_button">Read More</button>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services">
+            <div class="services__content">
+                <p>SERVICES WE ARE OFFERING</p>
+                <p>
+                    WE DESIGN DIGITAL PRODUCTS THAT <br />
+                    HELP GROW BUSINESSES.
+                </p>
+                <p>
+                    We are committed to providing our customers with exceptional
+                    service while offering <br />
+                    our employees the best training.
+                </p>
+
+                <div
+                    class="splide"
+                    role="group"
+                    aria-label="Splide Basic HTML Example"
+                >
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="splide__slide__content">
+                                    <i class="fa fa-dice-d6"></i>
+                                    <p>App mobile development</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__content">
+                                    <i class="fa-brands fa-autoprefixer"></i>
+                                    <p>digital maketing</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__content">
+                                    <i class="fa-brands fa-500px"></i>
+                                    <p>seo & content writing</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__content">
+                                    <i class="fa-solid fa-blog"></i>
+                                    <p>website development</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__content">
+                                    <i class="fa-brands fa-battle-net"></i>
+                                    <p>seo & content writing</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__content">
+                                    <i class="fa-solid fa-memory"></i>
+                                    <p>App mobile development</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SHOWCASE -->
+        <section class="showcase">
+            <div class="showcase__content">
+                <p class="showcase__content__title">Our Portfolio</p>
+                <p class="showcase__content__subtitle">WORK SHOWCASE</p>
+                <p class="showcase__content__desc">
+                    We are committed to providing our customers with exceptional
+                    service while offering our employees the best training.
+                </p>
+
+                <div class="showcase__content__image">
+                    <div class="showcase__content__image__item">
+                        <img src="./images/showcase_img_1.webp" alt="..." />
+                        <div class="showcase__content__image__item__overlay">
+                            <div class="image__item__overlay__icon">
+                                <i
+                                    class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                            </div>
+                            <div>
+                                <div class="image__item__overlay__text">
+                                    <p>Logo</p>
+                                    <p>Flippin bird</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase__content__image__item">
+                        <img src="./images/showcase_img_2.webp" alt="..." />
+                        <div class="showcase__content__image__item__overlay">
+                            <div class="image__item__overlay__icon">
+                                <i
+                                    class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                            </div>
+                            <div>
+                                <div class="image__item__overlay__text">
+                                    <p>Logo</p>
+                                    <p>Flippin bird</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase__content__image__item">
+                        <img src="./images/showcase_img_3.webp" alt="..." />
+                        <div class="showcase__content__image__item__overlay">
+                            <div class="image__item__overlay__icon">
+                                <i
+                                    class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                            </div>
+                            <div>
+                                <div class="image__item__overlay__text">
+                                    <p>Logo</p>
+                                    <p>Flippin bird</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase__content__image__item">
+                        <img src="./images/showcase_img_5.webp" alt="..." />
+                        <div class="showcase__content__image__item__overlay">
+                            <div class="image__item__overlay__icon">
+                                <i
+                                    class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                            </div>
+                            <div>
+                                <div class="image__item__overlay__text">
+                                    <p>Logo</p>
+                                    <p>Flippin bird</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase__content__image__item">
+                        <img src="./images/showcase_img_6.webp" alt="..." />
+                        <div class="showcase__content__image__item__overlay">
+                            <div class="image__item__overlay__icon">
+                                <i
+                                    class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                            </div>
+                            <div>
+                                <div class="image__item__overlay__text">
+                                    <p>Logo</p>
+                                    <p>Flippin bird</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase__content__image__item">
+                        <img src="./images/showcase_img_7.webp" alt="..." />
+                        <div class="showcase__content__image__item__overlay">
+                            <div class="image__item__overlay__icon">
+                                <i
+                                    class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                            </div>
+                            <div>
+                                <div class="image__item__overlay__text">
+                                    <p>Logo</p>
+                                    <p>Flippin bird</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BLOG POSTS -->
+        <section class="blog">
+            <div class="blog__content">
+                <p class="blog__content__title">OUR NEWS & ARTICLES</p>
+                <p class="blog__content__subtitle">LATEST BLOG POSTS</p>
+                <p class="blog__content__desc">
+                    We are committed to providing our customers with exceptional
+                    service while offering our employees the best training.
+                </p>
+                <div class="blog__image">
+                    <div class="blog__image__item">
+                        <img src="./images/grid-metro-1.jpg" alt="" />
+                    </div>
+
+                    <div class="blog__image__item">
+                        <img src="./images/grid-metro-2.jpg" alt="" />
+                    </div>
+                    <div class="blog__image__item">
+                        <img src="./images/grid-metro-3.jpg" alt="" />
+                    </div>
+                    <div class="blog__image__item">
+                        <img src="./images/grid-metro-4.jpg" alt="" />
+                    </div>
+                    <div class="blog__image__item">
+                        <img src="./images/grid-metro-5.jpg" alt="" />
+                    </div>
+                    <div class="blog__image__item">
+                        <img src="./images/grid-metro-6.jpg" alt="" />
+                    </div>
+                    <div class="blog__image__item">
+                        <img src="./images/grid-metro-7.jpg" alt="" />
+                    </div>
+                    <div class="blog__image__item">
+                        <img src="./images/grid-metro-8.jpg" alt="" />
+                    </div>
+                    <div class="blog__image__item">
+                        <img src="./images/grid-metro-9.jpg" alt="" />
+                    </div>
+                    <div class="blog__image__item">
+                        <img src="./images/grid-metro-10.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- static -->
+        <section class="static">
+            <div class="static-content">
+                <div class="static__content__item">
+                    <p class="counter">8,705</p>
+                    <p>PROJECTS COMPLETED</p>
+                </div>
+                <div class="static__content__item">
+                    <p class="counter">8,705</p>
+                    <p>PROJECTS COMPLETED</p>
+                </div>
+                <div class="static__content__item">
+                    <p class="counter">8,705</p>
+                    <p>PROJECTS COMPLETED</p>
+                </div>
+                <div class="static__content__item">
+                    <p class="counter">8,705</p>
+                    <p>PROJECTS COMPLETED</p>
+                </div>
+                <div class="static__content__item">
+                    <p class="counter">8,705</p>
+                    <p>PROJECTS COMPLETED</p>
+                </div>
+            </div>
+        </section>
+        <!-- digital -->
+        <section class="digital">
+            <div class="title">
+                <p>HOW DO WE WORKS</p>
+                <h2>DIGITAL EXPERIENCE</h2>
+                <p>
+                    We are committed to providing our customers with exceptional
+                    service while offering our <br />
+                    employees the best training.
+                </p>
+            </div>
+            <div class="digital_content">
+                <video
+                    src="./video/video.mp4"
+                    width="100%"
+                    height="auto"
+                    controls
+                ></video>
+            </div>
+        </section>
+        <!-- contact -->
+        <section class="contact">
+            <div class="contact_content">
+                <div class="contact_map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.505760841985!2d106.69544051012717!3d10.772522059222373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3f3129e64d%3A0x8d6b2d79522c7f30!2zQ2jhu6MgQuG6v24gVGjDoG5o!5e0!3m2!1svi!2s!4v1754653623463!5m2!1svi!2s"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+                <div class="contact_info">
+                    <input placeholder="user name" />
+                    <input placeholder="email address" />
+                    <textarea placeholder="ask a question"></textarea>
+                    <button>submit</button>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="footer_content">
+                <p>© 2021 UI-CYBERSOFT. ALL RIGHTS RESERVED.</p>
+                <div class="footer_socical">
+                    <div>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- buttom go to top -->
+        <a class="buttom_gototop" href="#top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+    </body>
+
+    <!-- SPLIDE -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <!-- SPLIDE JS -->
+    <script>
+        new Splide(".splide", {
+            type: "loop", // Kiểu vòng lặp
+            focus: "center", // Tập trung vào slide ở giữa
+            perPage: 5, // Số lượng slide hiển thị trên mỗi trang
+            arrows: false, // Ẩn/hiện mũi tên điều hướng
+            // autoplay: true, // Tự động phát
+            interval: 2000, // Thời gian giữa các slide (ms)
+        }).mount();
+    </script>
+    <!-- JQUERY -->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+    ></script>
+    <!-- WAYPOINTS -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gі0Dz4Rq9jXcySgcP¡K+5f01Cqw+ZoKLLKг9VMXuCsw3RjWiv8ZpIOa0hx079nр7Ec8DDWALM0ЬDOaQ=="
+        crossorigin="anonymous"
+    ></script>
+    <!-- COUNT-UP JS -->
+    <script src="./lib/countup/jquery.countup.min.js"></script>
+    <!--  -->
+    <script>
+        $(".counter").countUp();
+    </script>
+</html>
